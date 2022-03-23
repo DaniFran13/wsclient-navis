@@ -68,9 +68,13 @@
 					</execution>
 				</executions>
 				<configuration>
-					<wsdlUrls>
+					<wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
+					<wsdlFiles>
+            		<wsdlFile>demo.wsdl</wsdlFile>
+					</wsdlFiles>
+				<!--	<wsdlUrls>
 						<wsdlUrl>http://localhost:8181/ws/visit.wsdl</wsdlUrl>
-					</wsdlUrls>
+					</wsdlUrls-->
 					<keep>true</keep>
 					<packageName>com.fertisa.ec.ws.client.generated</packageName>
 					<sourceDestDir>src/main/java</sourceDestDir>

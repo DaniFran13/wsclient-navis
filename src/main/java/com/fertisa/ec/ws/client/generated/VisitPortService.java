@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "VisitPortService", targetNamespace = "http://spring.io/guides/gs-producing-web-service", wsdlLocation = "http://localhost:8181/ws/visit.wsdl")
+@WebServiceClient(name = "VisitPortService", targetNamespace = "http://spring.io/guides/gs-producing-web-service", wsdlLocation = "file:/home/hriera/workspace/wsclient-navis/src/main/resources/demo.wsdl")
 public class VisitPortService
     extends Service
 {
@@ -30,7 +30,7 @@ public class VisitPortService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8181/ws/visit.wsdl");
+            url = new URL("file:/home/hriera/workspace/wsclient-navis/src/main/resources/demo.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
